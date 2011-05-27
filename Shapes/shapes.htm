@@ -1,0 +1,54 @@
+<!--  -->
+<!--  -->
+<!-- saved from url=(0013)about:internet -->
+<HTML>
+<HEAD>
+<TITLE>shapes</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</HEAD>
+<BODY bgColor="#FFFFFF">
+
+<OBJECT classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=10,0,0,0"
+ ID=shapes WIDTH=630 HEIGHT=470>
+<PARAM NAME=src VALUE="shapes.dcr">
+<PARAM NAME=swStretchStyle VALUE=fill>
+<PARAM NAME=swRemote VALUE="swSaveEnabled='true' swVolume='false' swRestart='false' swPausePlay='false' swFastForward='false' swContextMenu='false' ">
+<PARAM NAME=bgColor VALUE=#FFFFFF> 
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+var ShockMode = 0;
+// check for the plugin
+if (navigator.mimeTypes && navigator.mimeTypes["application/x-director"] && navigator.mimeTypes["application/x-director"].enabledPlugin) 
+{
+		// check the plugin description to get the version string.
+		if (navigator.plugins && navigator.plugins["Shockwave for Director"] && (versionIndex = navigator.plugins["Shockwave for Director"].description.indexOf(".")) != - 1) 
+		{
+				// parse the version string to get the plugin version. we're ok if the major version is 10 or higher
+				var versionString = navigator.plugins["Shockwave for Director"].description.substring(versionIndex-2, versionIndex);
+				versionIndex = parseInt( versionString );
+				if (versionIndex >= 10 ) {
+					ShockMode = 1;
+				}
+		}
+}
+// If we have detected a valid version of the plugin, write the Embed tag, otherwise, write the Image tag.
+if ( ShockMode ) {
+	document.write('<EMBED SRC="shapes.dcr"');
+	document.write(' bgColor=#FFFFFF  WIDTH=630 HEIGHT=470 swStretchStyle=fill ');
+	document.write('swRemote="');
+	document.write("swSaveEnabled='true' swVolume='false' swRestart='false' swPausePlay='false' swFastForward='false' swContextMenu='false' ");
+	document.write('"');
+	document.write(' TYPE="application/x-director" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveDirector">');
+	document.write('</EMBED>');
+} else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0)){
+	document.write('<IMG SRC="" WIDTH=630 HEIGHT=470 BORDER=0>');
+}
+//-->
+</SCRIPT>
+<NOEMBED><IMG SRC="" WIDTH=630 HEIGHT=470 BORDER=0></NOEMBED>
+<NOSCRIPT><IMG SRC="" WIDTH=630 HEIGHT=470 BORDER=0></NOSCRIPT>
+</OBJECT>
+
+</BODY>
+</HTML>
